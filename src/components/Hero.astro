@@ -1,0 +1,49 @@
+---
+// Page Variables [Needs Refactoring]
+const data = {
+	title: "Avitesh Murmu",
+	branch: "Chemical Engineering",
+	course: "B.Tech.",
+	college: "IIT Bombay",
+	about_text: "I'm extremely passionate about web development & am extensively learning new technologies to level up my skills. I'm currently looking for new opportunity, Feel free to look around, or just say hi if you want to reach out. Want to know how I may help your project? Check out my project portfolio and online resume.",
+};
+---
+
+<section class="row hero mb-5">
+	<div class="col-lg-7 order-lg-1 order-2">
+		<h1 class="font-weight-bold text-primary">{data.title}</h1>
+		<p class="lead">{data.course} - {data.branch} | <span class="font-weight-bold">{data.college}</span></p>
+		<p class="text-secondary">
+			{data.about_text}
+		</p>
+		<a href="resume.html" class="btn btn btn-primary btn-sm mb-2">View Resume<i class="fas fa-chevron-right ml-2"></i></a>
+		<a href="projects.html" class="btn btn btn-outline-dark btn-sm mb-2">View Projects<i class="fas fa-chevron-right ml-2"></i></a>
+	</div>
+	<div class="col-lg-5 order-lg-2 order-1">
+		<div class="my-img-placeholder"></div>
+	</div>
+</section>
+<!-- hero section -->
+
+
+<style>
+	.hero .my-img-placeholder {
+		width: 100%;
+		height: 100%;
+		background: url("/images/avitesh-murmu.jfif") no-repeat center;
+		background-size: cover;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+	@media (max-width: 991.98px) {
+		.hero .my-img-placeholder {
+			height: 300px !important;
+			margin-bottom: 20px;
+		}
+	}
+	@media (max-width: 991.98px) and (min-width: 768px) {
+		.hero .my-img-placeholder {
+			width: 350px !important;
+		}
+	}
+</style>

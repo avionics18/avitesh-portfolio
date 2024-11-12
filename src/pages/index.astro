@@ -1,0 +1,126 @@
+---
+// components import
+import Hero from "../components/Hero.astro";
+
+// layout imports
+import MainLayout from "../layouts/MainLayout.astro";
+
+// Page Variables [Needs Refactoring]
+const title = "Avitesh Murmu"
+---
+
+<MainLayout title={title}>
+	<Hero />
+	<section class="row skills">
+		<div class="col-12">
+			<div class="card shadow-sm rounded-lg">
+				<div class="card-body">
+					<h3 class="border-left border-primary pl-3">What I Do!</h3>
+					<p class="text-secondary">
+						I have experience in building small web apps. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my
+						<a href="resume.html" class="text-primary">online resume</a> and <a href="projects.html" class="text-primary">project portfolio</a>.
+					</p>
+					<!-- PROGRAMS ROW -->
+					<div class="row skills-lang">
+						<div class="col-lg-4 col-sm-6">
+							<div class="card border-0 rounded-lg mb-2">
+								<div class="card-body">
+									<p>
+										<i class="fab fa-html5 fa-2x mr-1"></i>
+										<i class="fab fa-css3-alt fa-2x"></i>
+									</p>
+									<h6 class="ff-heading font-weight-bold">HTML & CSS</h6>
+									<p class="small text-secondary">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis excepturi exercitationem, velit ut, illum maiores accusamus. A dicta porro libero.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- col-lg-4 -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="card border-0 rounded-lg mb-2">
+								<div class="card-body">
+									<p><i class="fab fa-js fa-2x"></i></p>
+									<h6 class="ff-heading font-weight-bold">JAVASCRIPT</h6>
+									<p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni ducimus at impedit voluptatibus enim corporis nisi sequi tempora, officiis.</p>
+								</div>
+							</div>
+						</div>
+						<!-- col-lg-4 -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="card border-0 rounded-lg mb-2">
+								<div class="card-body">
+									<p>
+										<i class="fab fa-sass fa-2x mr-1"></i>
+										<i class="fab fa-npm fa-2x mr-1"></i>
+										<i class="fab fa-gulp fa-2x mr-1"></i>
+									</p>
+									<h6 class="ff-heading font-weight-bold">SASS, NPM, GULP</h6>
+									<p class="small text-secondary">
+										Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Voluptas, expedita soluta, possimus assumenda neque corrupti necessitatibus et fugiat facere eos.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="card border-0 rounded-lg mb-2">
+								<div class="card-body">
+									<p><i class="fab fa-react fa-2x"></i></p>
+									<h6 class="ff-heading font-weight-bold">REACT</h6>
+									<p class="small text-secondary">
+										Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eaque, ad. Aut minus reprehenderit vitae recusandae rem maiores dolorum, consectetur dolorem.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- col-lg-4 -->
+						<!-- col-lg-4 -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="card border-0 rounded-lg mb-2">
+								<div class="card-body">
+									<p>
+										<i class="fab fa-node-js fa-2x"></i>
+									</p>
+									<h6 class="ff-heading font-weight-bold">NODE JS & EXPRESS</h6>
+									<p class="small text-secondary">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem delectus, excepturi blanditiis dolor odit obcaecati, hic consequuntur placeat sint.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- col-lg-4 -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="card border-0 rounded-lg mb-2">
+								<div class="card-body">
+									<p><img src="/images/mongodb.png" width="32" alt="mongodb" /></p>
+									<h6 class="ff-heading font-weight-bold">MONGO DB</h6>
+									<p class="small text-secondary">
+										Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sint deleniti possimus corrupti laborum accusamus illo atque animi incidunt voluptatum. Inventore id.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- col-lg-4 -->
+					</div>
+					<!-- PROGRAMS ROW -->
+				</div>
+				<!-- card-body wrapper -->
+			</div>
+			<!-- whole card wrapper -->
+		</div>
+		<!-- col-12 -->
+	</section>
+	<!-- skills row -->
+</MainLayout>
+
+
+<style>
+	.skills-lang .card {
+		transition: 0.25s;
+	}
+	.skills-lang .card:hover {
+		cursor: pointer;
+		background-image: linear-gradient(0deg, #eee, var(--light));
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	}
+</style>
