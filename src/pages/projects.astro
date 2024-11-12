@@ -1,0 +1,58 @@
+---
+// components import
+
+// layout imports
+import MainLayout from "../layouts/MainLayout.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+// data imports
+import siteData from "../data/siteData.json";
+
+// Local
+const activeMenu = "Projects";
+---
+
+<MainLayout title={activeMenu}>
+	<Sidebar slot="sidebar" activeMenu={activeMenu} />
+
+	<section class="row">
+		<div class="col-12">
+			<div class="card shadow-sm">
+				<div class="card-body">
+					<h2 class="text-primary font-weight-bold">Projects</h2>
+					<hr />
+					<p class="text-secondary">
+						I've always been passionate about design. Over the past one year, I've had the opportunity to bring my ideas to life through a variety of projects. From {siteData.projects[0].title} to {siteData.projects[siteData.projects.length - 1].title}, each project has been a unique learning experience. I invite you to explore my portfolio and discover the stories behind my work.
+					</p>
+
+					<!-- Project List -->
+					<div class="row mt-5">
+						{siteData.projects.map(project => (
+							<div class="col-12 mb-4">
+								<h3 class="h5 d-flex align-items-end justify-content-between">
+									{project.title}
+									<small class="font-weight-light text-secondary">{project.timeline}</small>
+								</h3>
+								<p class="small">
+									<span class="font-weight-light">{project.type}</span>
+									<span class="font-weight-light">{project.guidance && "| " + project.guidance}</span>
+								</p>
+								<hr class="my-2" />
+								<ul>
+									{project.details.map(detail => (
+										<li set:html={detail}></li>
+									))}
+								</ul>
+							</div>
+						))}
+					</div>
+					<!-- row project-list -->
+				</div>
+				<!-- card-body wrapper -->
+			</div>
+			<!-- card wrapper -->
+		</div>
+		<!-- col-12 -->
+	</section>
+	<!-- row section -->
+</MainLayout>

@@ -1,7 +1,6 @@
 ---
 // layouts import
 import MainHead from "./MainHead.astro";
-import Sidebar from "../components/Sidebar.astro";
 
 
 // astro props
@@ -22,7 +21,7 @@ const { title } = Astro.props as Props;
 
 			<div class="row no-gutters">
 				<div class="col-lg-3" id="left-container">
-					<Sidebar />
+					<slot name="sidebar" />
 				</div>
 				<!-- left-container -->
 

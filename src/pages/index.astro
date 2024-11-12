@@ -4,12 +4,18 @@ import Hero from "../components/Hero.astro";
 
 // layout imports
 import MainLayout from "../layouts/MainLayout.astro";
+import Sidebar from "../components/Sidebar.astro";
 
-// Page Variables [Needs Refactoring]
-const title = "Avitesh Murmu"
+// data imports
+import siteData from "../data/siteData.json";
+
+// Local
+const activeMenu = "About Me";
 ---
 
-<MainLayout title={title}>
+<MainLayout title="">
+	<Sidebar slot="sidebar" activeMenu={activeMenu} />
+
 	<Hero />
 	<section class="row skills">
 		<div class="col-12">
@@ -18,7 +24,7 @@ const title = "Avitesh Murmu"
 					<h3 class="border-left border-primary pl-3">What I Do!</h3>
 					<p class="text-secondary">
 						I have experience in building small web apps. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my
-						<a href="resume.html" class="text-primary">online resume</a> and <a href="projects.html" class="text-primary">project portfolio</a>.
+						<a href="/resume" class="text-primary">online resume</a> and <a href="/projects" class="text-primary">project portfolio</a>.
 					</p>
 					<!-- PROGRAMS ROW -->
 					<div class="row skills-lang">

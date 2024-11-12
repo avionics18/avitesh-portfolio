@@ -1,0 +1,30 @@
+---
+// components import
+
+// layout imports
+import MainLayout from "../layouts/MainLayout.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+// data imports
+
+// Local
+const activeMenu = "Certifications";
+---
+
+<MainLayout title={activeMenu}>
+	<Sidebar slot="sidebar" activeMenu={activeMenu} />
+
+	<section class="row">
+		<div class="col-12">
+			<div class="card shadow-sm">
+				<div class="card-body">
+					<h2 class="text-primary font-weight-bold text-center">Coming Soon!</h2>
+				</div>
+				<!-- card-body wrapper -->
+			</div>
+			<!-- card wrapper -->
+		</div>
+		<!-- col-12 -->
+	</section>
+	<!-- row section -->
+</MainLayout>

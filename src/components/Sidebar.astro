@@ -1,49 +1,33 @@
 ---
-const data = {
-	social_links: [
-		{
-			icon: "facebook",
-			url: "https://www.facebook.com",
-		},
-		{
-			icon: "twitter",
-			url: "https://www.twitter.com",
-		},
-		{
-			icon: "codepen",
-			url: "https://www.codepen.io/avionics18",
-		},
-		{
-			icon: "github",
-			url: "https://www.github.com/avionics18",
-		},
-		{
-			icon: "linkedin",
-			url: "https://www.linkedin.com/in/avinash-murmu-52b3301a6/",
-		},
-	],
-};
+// data imports
+import menu from "../data/menu.json";
+import siteData from "../data/siteData.json";
+const avatar_img = "/images/" + siteData.image;
+
+// LOCAL
+const {activeMenu} = Astro.props;
 ---
 
 <div class="sidebar">
 	<div id="follow-me" class="p-3 text-center">
 		<h4 class="text-light m-0">Follow Me</h4>
-		<img class="rounded-pill shadow-sm my-3" src="/images/avitesh-murmu.jfif" width="120" alt="Avinash Murmu" />
+		<img class="rounded-pill shadow-sm my-3" src={avatar_img} width="120" alt="Avinash Murmu" />
 		<p class="small text-light ff-heading">Hey! This is Avitesh Murmu and I'm a full-stack developer. Welcome to my portfolio.</p>
-		<p>
-			{data.social_links.map(link => (
-				<a href={link.url} class="btn btn-outline-light btn-sm" target="_blank"><i class={`fab fa-${link.icon}`}></i></a>
+		<p class="d-flex align-items-center justify-content-center" style="gap: 1rem;">
+			{siteData.social_links.map(link => (
+				<a href={link.url} class="btn btn-outline-light btn-sm" target="_blank"><i class={`${link.icon_class}`}></i></a>
 			))}
 		</p>
 	</div>
 	<!-- #follow-me -->
-	<nav class="p-3 mt-3">
-		<a href="index.html" class="nav-items active"><i class="fas fa-id-badge mr-2"></i>About Me</a>
-		<a href="resume.html" class="nav-items"><i class="fas fa-align-right mr-2"></i>Resume</a>
-		<a href="projects.html" class="nav-items"><i class="fab fa-app-store mr-2"></i>Projects</a>
-		<a href="certifications.html" class="nav-items"><i class="fab fa-buffer mr-2"></i>Certifications</a>
-		<a href="contact.html" class="nav-items"><i class="fas fa-envelope mr-2"></i>Contact</a>
-		<a href="https://www.linkedin.com/in/avinash-murmu-52b3301a6/" class="btn btn-dark btn-block text-uppercase mt-2">Hire Me<i class="fas fa-laptop-code ml-2"></i></a>
+	<nav class="p-3 mt-3 overflow-auto">
+		{menu.map(item => {
+			if (item.title == activeMenu) {
+				return (<a href={item.url} class="nav-items active"><i class={`${item.icon_class} mr-2`}></i>{item.title}</a>);
+			} else {
+				return (<a href={item.url} class="nav-items"><i class={`${item.icon_class} mr-2`}></i>{item.title}</a>);
+			}
+		})}
 	</nav>
 	<!-- nav -->
 </div>

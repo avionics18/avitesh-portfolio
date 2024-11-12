@@ -1,0 +1,32 @@
+[
+	{
+		"title": "About Me",
+		"url": "/",
+		"icon_class": "fas fa-id-badge"
+	},
+	{
+		"title": "Resume",
+		"url": "/resume",
+		"icon_class": "fas fa-align-right"
+	},
+	{
+		"title": "Projects",
+		"url": "/projects",
+		"icon_class": "fab fa-app-store"
+	},
+	{
+		"title": "Certifications",
+		"url": "/certifications",
+		"icon_class": "fab fa-buffer"
+	},
+	{
+		"title": "Contact",
+		"url": "/contact",
+		"icon_class": "fas fa-envelope"
+	},
+	{
+		"title": "Hire Me",
+		"url": "https://www.linkedin.com/in/avitesh-murmu-19a9b1280/",
+		"icon_class": "fas fa-laptop-code"
+	}
+]

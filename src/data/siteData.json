@@ -1,0 +1,92 @@
+{
+    "title": "Avitesh Murmu",
+    "description": "I'm extremely passionate about web development & am extensively learning new technologies to level up my skills. I'm currently looking for new opportunity, Feel free to look around, or just say hi if you want to reach out. Want to know how I may help your project? Check out my project portfolio and online resume.",
+    "image": "avitesh-murmu.jpg",
+    "designation": "Full-Stack Developer",
+    "branch": "Chemical Engineering",
+    "course": "B.Tech.",
+    "college": {
+        "shortname": "IIT Bombay",
+        "longname": "Indian Institute of Technology, Bombay"
+    },
+    "resume": {
+        "image": "avitesh_resume_24.png",
+        "pdf": "avitesh_resume_24.pdf"
+    },
+    "social_links": [
+        {
+            "icon_class": "fab fa-dribbble",
+            "url": "https://dribbble.com/Aviteshmurmu"
+        },
+        {
+            "icon_class": "fab fa-twitter",
+            "url": "https://x.com/AviteshMurmu"
+        },
+        {
+            "icon_class": "fab fa-codepen",
+            "url": "https://codepen.io/aviteshmurmu"
+        },
+        {
+            "icon_class": "fab fa-github",
+            "url": "https://github.com/Aviteshmurmu19"
+        },
+        {
+            "icon_class": "fab fa-linkedin",
+            "url": "https://www.linkedin.com/in/avitesh-murmu-19a9b1280/"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Chew Crew App UI/UX",
+            "timeline": "2022",
+            "type": "Course Project",
+            "guidance": "Prof. Nishant Sharma and P. Sunthar",
+            "details": [
+                "Designed <b>UI/UX</b> for a <b>mobile application</b> for students facilitating them with dietary and nutritional information",
+                "Providing <b>meal-specific advice</b> to improve clarity on nutrient intake and <b>improving their experience</b> by <b>delivering customized food solutions</b> for hostel students. Designed and developed using <b>Figma</b>"
+            ]
+        },
+        {
+            "title": "App Store Using Tkinter for Windows",
+            "timeline": "2021",
+            "type": "Self Project",
+            "guidance": "",
+            "details": [
+                "Created a <b>Windows Application</b> using Tkinter, <b>Python</b> Library that is used to create front-end of the application",
+                "Implemented <b>Tkinter</b> and <b>MySQL</b> to store the database of apps along with it details",
+                "It offers to add, delete or search any app that user enters and gets updated in Real-time. It also offers to store apps by creating an account. Users data are also stored in MySQL"
+            ]
+        },
+        {
+            "title": "Payload Vehicle Bot",
+            "timeline": "2022",
+            "type": "Course Project",
+            "guidance": "Prof. Dinesh K Sharma and Ankit Jain",
+            "details": [
+                "Designed and built a vehicle that can ascend or descend slopes with an incline while carrying and unload the payload",
+                "Developed <b>CAD</b> models using <b>Fusion 360</b>, <b>Fracktory</b> to print 3D models, and <b>LaserCAD</b> to lasercut glass"
+            ]
+        },
+        {
+            "title": "Option Pricing Models and Their Accuracy",
+            "timeline": "July'23 - Aug'23",
+            "type": "FinSearch",
+            "guidance": "Finance Club, IIT Bombay",
+            "details": [
+                "Designed and built a vehicle that can ascend or descend slopes with an incline while carrying and unload the payload",
+                "Developed <b>CAD</b> models using <b>Fusion 360</b>, <b>Fracktory</b> to print 3D models, and <b>LaserCAD</b> to lasercut glass"
+            ]
+        },
+        {
+            "title": "Website Scraping and Database Creation Using Python",
+            "timeline": "2022",
+            "type": "Self Project",
+            "guidance": "",
+            "details": [
+                "Extracted data from official website of Seasons of Code and Sportskeeda, using Scraping Tools like BeautifulSoup for Python and stored its courses offered and News headings respectively, in CSV format using <b>Pandas</b> and <b>Numpy</b>",
+                "The scraped data, <b>refreshed at regular intervals</b>",
+                "Created posts for the Instagram Series called \"InCase You Didn't Know\" which explains any popular topic in a way that anyone can understand, for example Voice to Voice Conversion with <b>AI</b>"
+            ]
+        }
+    ]
+}
